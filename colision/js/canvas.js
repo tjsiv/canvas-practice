@@ -19,7 +19,7 @@ function getDistance(x1, y1, x2, y2){ //takes distance between 2 objects a^2 + b
   return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
 }
 
-function randomIntFromRange(min, max) {
+function randomIntFromRange(min, max) { //makes random number
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 

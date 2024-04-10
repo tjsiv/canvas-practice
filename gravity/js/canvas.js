@@ -8,7 +8,7 @@ const c = canvas.getContext('2d')
 
 canvas.width = innerWidth
 canvas.height = innerHeight
-let gravity = 1;
+let gravity = 1;// this is the rate at which things should fall
 const mouse = {
   x: innerWidth / 2,
   y: innerHeight / 2
@@ -17,12 +17,12 @@ const mouse = {
 const colors = ['#2185C5', '#7ECEFD', '#FFF6E5', '#FF7F66']
 
 // Event Listeners
-addEventListener('mousemove', (event) => {
+addEventListener('mousemove', (event) => { //tracks mouse position
   mouse.x = event.clientX
   mouse.y = event.clientY
 })
 
-addEventListener('resize', () => {
+addEventListener('resize', () => {//makes sure to update canvas on screen resize
   canvas.width = innerWidth
   canvas.height = innerHeight
 
@@ -33,7 +33,7 @@ addEventListener('click', function(){
   init();
 })
 
-function randomIntFromRange(min, max) {
+function randomIntFromRange(min, max) { //makes random number
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
